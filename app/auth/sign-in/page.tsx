@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 export default function SignInPage() {
 	return <div></div>;
 }
@@ -7,4 +7,3 @@ export default function SignInPage() {
 // shadcn.com switch component eklenecek.
 
 //htmlFor elementi label etiketine eklenecek.
-

@@ -28,7 +28,7 @@ export default function Navbar() {
 			</ul>
 
 			{isLoginOpen && (
-				<div className= "absolute inset-0 flex justify-center items-center bg-black/20">
+				<div className="absolute inset-0 flex justify-center items-center bg-black/20">
 					<div className="popup-overlay border-2 bg-red-400 p-8 rounded-lg">
 						<div className="popup-box">
 							<button
@@ -39,7 +39,11 @@ export default function Navbar() {
 							</button>
 							<h2>Giriş Yap</h2>
 							<form>
-								<Input  type="text" placeholder="Kullanıcı Adı" className='bg-white'/>
+								<Input
+									type="text"
+									placeholder="Kullanıcı Adı"
+									className="bg-white"
+								/>
 								<Input type="password" placeholder="Şifre" />
 								<Button type="submit">Giriş Yap</Button>
 							</form>
