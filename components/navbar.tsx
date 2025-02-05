@@ -6,13 +6,19 @@ export default function Navbar() {
 		<nav className="flex justify-between items-center px-4 border-b-2 h-16">
 			<ul className="flex gap-4 ">
 				<li>
-					<Link href="/">Home</Link>
+					<Button asChild>
+						<Link href="/">Home</Link>
+					</Button>
 				</li>
 				<li>
-					<Link href="/about-us">About Us</Link>
+					<Button asChild>
+						<Link href="/about-us">About Us</Link>
+					</Button>
 				</li>
 				<li>
-					<Link href="/contact-us">Contact Us</Link>
+					<Button asChild>
+						<Link href="/contact-us">Contact Us</Link>
+					</Button>
 				</li>
 			</ul>
 			<ul>
