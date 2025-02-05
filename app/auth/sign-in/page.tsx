@@ -9,12 +9,13 @@ import {
 
 import { Input } from '@/components/ui/input';
 import { Switch } from '@/components/ui/switch';
+import { Checkbox } from '@/components/ui/checkbox';
 
 export default function SignInPage() {
 	return (
 		<Card className="w-80 mx-auto mt-14">
 			<CardHeader>
-				<CardTitle>Sign In</CardTitle>
+				<CardTitle>Giriş Yap</CardTitle>
 			</CardHeader>
 			<CardContent className="flex flex-col gap-4">
 				<Input placeholder="Kullanıcı Adı veya E-posta" />
@@ -27,6 +28,12 @@ export default function SignInPage() {
 			</CardContent>
 			<CardFooter>
 				<Button className="w-full">Giriş Yap</Button>
+				<div className="ml-2 flex items-center justify-center">
+					<Checkbox id="rememberMe" />
+					<label htmlFor="rememberMe" className="ml-4">
+						Beni Hatırla
+					</label>
+				</div>
 			</CardFooter>
 		</Card>
 	);
