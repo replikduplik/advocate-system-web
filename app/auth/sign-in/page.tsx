@@ -27,12 +27,22 @@ export default function SignInPage() {
 				</div>
 			</CardContent>
 			<CardFooter>
-				<Button className="w-full">Giriş Yap</Button>
+				<Button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+					Giriş Yap
+				</Button>
 				<div className="ml-2 flex items-center justify-center">
 					<Checkbox id="rememberMe" />
 					<label htmlFor="rememberMe" className="ml-4">
 						Beni Hatırla
 					</label>
+				</div>
+				<div className="mt-2">
+					<Button
+						variant="link"
+						className="w-fulltext-blue-500 hover:text-blue-700"
+					>
+						Şifremi Unuttum
+					</Button>
 				</div>
 			</CardFooter>
 		</Card>
