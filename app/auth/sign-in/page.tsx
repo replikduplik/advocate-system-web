@@ -39,7 +39,7 @@ export default function SignInPage() {
 				<div className="mt-2">
 					<Button
 						variant="link"
-						className="w-fulltext-blue-500 hover:text-blue-700"
+						className="w-fulltext-blue-500 hover:text-blue-700 "
 					>
 						Şifremi Unuttum
 					</Button>
