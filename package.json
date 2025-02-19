@@ -28,7 +28,10 @@
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3.2.0",
+<<<<<<< HEAD
 		"@tailwindcss/postcss": "^4.0.7",
+=======
+>>>>>>> 5906fc4b0392bb1a2f1d99df4d656ad138c356de
 		"@types/node": "^22.13.4",
 		"@types/react": "^19.0.10",
 		"@types/react-dom": "^19.0.4",
