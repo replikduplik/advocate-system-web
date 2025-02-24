@@ -42,13 +42,10 @@ export default function DashboardPage() {
 							<div className="bg-white p-6 w-full">
 								<h3 className="text-lg font-semibold">Today</h3>
 								<ul>
-									<li className="flex justify-between py-2 border-b">
-										<img
-											src="images/food-and-drinks.svg"
-											alt="food-and-drinks"
-										/>
+									<li className="flex py-2 border-b">
+										<img src="images/utensils.png" alt="food-and-drinks" />
 										<p>Grocery</p>
-										<p className="text-red-500">-326.800</p>
+										<p className="text-red-500 ml-50">-326.800</p>
 									</li>
 									<li className="flex justify-between py-2 border-b">
 										<img
@@ -65,8 +62,8 @@ export default function DashboardPage() {
 								</ul>
 							</div>
 
-							<div className="flex flex-col bg-[#F9FAFC] w-52 ml-24">
-								<h2 className="flex text-lg font-bold">
+							<div className="flex flex-col bg-[#F9FAFC] w-52 ml-24 gap-4">
+								<h2 className="flex text-md font-bold">
 									Where Your Money Goes?
 								</h2>
 								<ul className="flex flex-col bg-white">
@@ -91,9 +88,31 @@ export default function DashboardPage() {
 										<p className="font-bold">520.000</p>
 									</li>
 								</ul>
-								<div className="flex flex-col border-2 bg-gray-600 rounded-xl shadow-md gap-4 w-52 h-50 p-4">
-									<h2 className="font-bold">Save More Money</h2>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+								
+								<div className="flex flex-col border-2 bg-gray-100 rounded-2xl shadow-lg gap-4 w-52 h-50 p-4">
+									<div className="flex justify-center -mt-12 gap-4">
+										<img
+											src="images/img-1.png"
+											alt="Illustration"
+											className="w-14 h-18"
+										/>
+										<img
+											src="images/img-2.png"
+											alt="Illustration"
+											className="w-14 h-18"
+										/>
+									</div>
+									<h2 className="text-lg font-bold text-gray-900">
+										Save More Money
+									</h2>
+									<p className="text-gray-500 text-sm">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit
+									</p>
+									<div className="flex flex-col items-center">
+										<button className="bg-black text-white px-4 py-1 rounded-lg text-sm font-semibold">
+											VIEW TIPS
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
