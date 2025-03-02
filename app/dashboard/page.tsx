@@ -1,15 +1,23 @@
+import { ActivityIcon, BusIcon, HouseIcon, UtensilsIcon } from 'lucide-react';
 import React from 'react';
-
+const expensivesList = [
+	{ id: 1, title: 'Grocery', amount: -326.8, icon: <UtensilsIcon /> },
+	{ id: 2, title: 'Transport', amount: -15.9, icon: <BusIcon /> },
+	{ id: 3, title: 'Housing', amount: -185.75, icon: <HouseIcon /> },
+];
 export default function DashboardPage() {
 	return (
 		<div className="p-8 h-screen">
 			<main className="flex flex-row border h-full bg-black rounded-3xl">
 				<div className="flex flex-col w-1/4 bg-black rounded-l-3xl h-full justify-between items-center py-16">
-					<img
+					{/* <img
 						src="images/profile.jpg"
 						alt="profile"
 						className="rounded-3xl h-20 w-20"
-					/>
+						/> */}
+					<div className="bg-orange-500 rounded-full p-4">
+						<ActivityIcon color="white" size={64} strokeWidth={3} />
+					</div>
 
 					<ul className="flex flex-col p-4 justify-center align-top">
 						<li className="flex items-center gap-3 p-2 text-slate-500"></li>
@@ -42,23 +50,20 @@ export default function DashboardPage() {
 							<div className="bg-white p-6 w-full">
 								<h3 className="text-lg font-semibold">Today</h3>
 								<ul>
-									<li className="flex py-2 border-b">
-										<img src="images/utensils.png" alt="food-and-drinks" />
-										<p>Grocery</p>
-										<p className="text-red-500 ml-50">-326.800</p>
-									</li>
-									<li className="flex justify-between py-2 border-b">
-										<img
-											src="./public/images/transportation.svg"
-											alt="transportation"
-										/>
-										<p>Transportation</p>
-										<p className="text-red-500">-15.000</p>
-									</li>
-									<li className="flex justify-between py-2">
-										<p>Housing</p>
-										<p className="text-red-500">-185.750</p>
-									</li>
+									{expensivesList.map((e) => {
+										return (
+											<li
+												key={e.id}
+												className="flex justify-between items-center py-2 border-b"
+											>
+												<p className="flex items-center gap-2">
+													{e.icon}
+													<span>{e.title}</span>
+												</p>
+												<p className="text-red-500">{e.amount}</p>
+											</li>
+										);
+									})}
 								</ul>
 							</div>
 
@@ -88,7 +93,7 @@ export default function DashboardPage() {
 										<p className="font-bold">520.000</p>
 									</li>
 								</ul>
-								
+
 								<div className="flex flex-col border-2 bg-gray-100 rounded-2xl shadow-lg gap-4 w-52 h-50 p-4">
 									<div className="flex justify-center -mt-12 gap-4">
 										<img
